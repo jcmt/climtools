@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>test module &mdash; .  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title=".  documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="index.html">.  documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-test">
+<span id="test-module"></span><h1>test module<a class="headerlink" href="#module-test" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="test.KinKmeans">
+<tt class="descclassname">test.</tt><tt class="descname">KinKmeans</tt><big>(</big><em>var</em>, <em>nk=False</em>, <em>tol=0.0001</em>, <em>n_init=100</em><big>)</big><a class="headerlink" href="#test.KinKmeans" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="test.cclimatology">
+<tt class="descclassname">test.</tt><tt class="descname">cclimatology</tt><big>(</big><em>var</em>, <em>time</em>, <em>relative=False</em>, <em>smooth=False</em>, <em>window=15</em>, <em>israin=False</em><big>)</big><a class="headerlink" href="#test.cclimatology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the daily climatology (time = 365/6 days) and the anomaly
+in relation to that climatology</p>
+<dl class="docutils">
+<dt>var <span class="classifier-delimiter">:</span> <span class="classifier">numpy </span></dt>
+<dd>Array with data (usualy time, lat, lon)</dd>
+<dt>time <span class="classifier-delimiter">:</span> <span class="classifier">list </span></dt>
+<dd>containing the datetime for var</dd>
+<dt>relative <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True retuns relative anomaly</dd>
+<dt>smooth <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True smooths climatology with runing mean</dd>
+<dt>window <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Window for running mean</dd>
+<dt>israin <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True for rain data (uses sum instead of mean)</dd>
+</dl>
+<dl class="docutils">
+<dt>numpy </dt>
+<dd>Array with daily climatology and anomaly</dd>
+</dl>
+<blockquote>
+<div>clim, anl = cclimatology(var, timei, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs)</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.eof">
+<tt class="descclassname">test.</tt><tt class="descname">eof</tt><big>(</big><em>var</em>, <em>neof=30</em>, <em>dim='field'</em><big>)</big><a class="headerlink" href="#test.eof" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="test.runmean">
+<tt class="descclassname">test.</tt><tt class="descname">runmean</tt><big>(</big><em>x</em>, <em>N</em><big>)</big><a class="headerlink" href="#test.runmean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="test.svd">
+<tt class="descclassname">test.</tt><tt class="descname">svd</tt><big>(</big><em>var1</em>, <em>var2</em>, <em>neof</em><big>)</big><a class="headerlink" href="#test.svd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/test.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="index.html">.  documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Author.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
